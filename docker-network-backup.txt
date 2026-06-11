@@ -1,0 +1,11 @@
+NETWORK ID     NAME                    DRIVER    SCOPE
+9124f3266dd0   Admin.net               bridge    local
+1e741b36c2d9   DB.net                  bridge    local
+b9d82b405acd   DNS.net                 bridge    local
+f38648d0f8b2   Wazuh.net               bridge    local
+d75e2c341162   Web.net                 bridge    local
+6cfc4862085c   bridge                  bridge    local
+04def8ab8957   host                    host      local
+909c5c7dd9cb   none                    null      local
+2204bd9b49e3   onprem-docker_graynet   bridge    local
+bd13a5fae80d   single-node_default     bridge    local

@@ -1,0 +1,9 @@
+*.tar
+*.tar.gz
+*.zip
+*.log
+logs/
+.env
+**/certs/
+**/*key*
+**/*pem*

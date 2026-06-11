@@ -1,0 +1,1413 @@
+[
+    {
+        "Id": "4f1fc98eb62470b70aa9af4ffc534704d50a7b8b54064059cebb787a7ca1b40c",
+        "Created": "2026-06-10T08:10:26.748920453Z",
+        "Path": "docker-php-entrypoint",
+        "Args": [
+            "apache2-foreground"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 6894,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-06-10T23:17:59.320930901Z",
+            "FinishedAt": "2026-06-10T18:29:33.022983346Z"
+        },
+        "Image": "sha256:c1535b5c08a535fbb10cbbde1f9afea853a950ceeedcb8bbf4e6af417c51c8da",
+        "ResolvConfPath": "/var/lib/docker/containers/4f1fc98eb62470b70aa9af4ffc534704d50a7b8b54064059cebb787a7ca1b40c/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/4f1fc98eb62470b70aa9af4ffc534704d50a7b8b54064059cebb787a7ca1b40c/hostname",
+        "HostsPath": "/var/lib/docker/containers/4f1fc98eb62470b70aa9af4ffc534704d50a7b8b54064059cebb787a7ca1b40c/hosts",
+        "LogPath": "/var/lib/docker/containers/4f1fc98eb62470b70aa9af4ffc534704d50a7b8b54064059cebb787a7ca1b40c/4f1fc98eb62470b70aa9af4ffc534704d50a7b8b54064059cebb787a7ca1b40c-json.log",
+        "Name": "/web01",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "233a65c751dd74289a5f8ff00bf93beb67662720a05c9fef2224309570a6e559"
+        ],
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "DB.net",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [
+                "wazuh-manager01:172.20.0.2"
+            ],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "web01",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC",
+                "PHP_VERSION=8.2.31",
+                "PHP_URL=https://www.php.net/distributions/php-8.2.31.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.2.31.tar.xz.asc",
+                "PHP_SHA256=95eae411d594fe6f6e5678b76645dc13ae47d3c0a5325c1d969b58dea56ee45a"
+            ],
+            "Cmd": [
+                "apache2-foreground"
+            ],
+            "Image": "onprem-docker-web",
+            "Volumes": null,
+            "WorkingDir": "/var/www/html",
+            "Entrypoint": [
+                "docker-php-entrypoint"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "fe85b442a889ae8feedebf88469611da65a947a99be8f5fcecef2e936f1f21ad",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "db:service_started:false",
+                "com.docker.compose.image": "sha256:c1535b5c08a535fbb10cbbde1f9afea853a950ceeedcb8bbf4e6af417c51c8da",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "onprem-docker",
+                "com.docker.compose.project.config_files": "/mnt/c/Users/paty1/onprem-docker/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/mnt/c/Users/paty1/onprem-docker",
+                "com.docker.compose.replace": "web01",
+                "com.docker.compose.service": "web",
+                "com.docker.compose.version": "5.1.4"
+            },
+            "StopSignal": "SIGWINCH"
+        },
+        "NetworkSettings": {
+            "SandboxID": "f1d60e989dd39dd546377ecd73be5ba0917de5e4a110d7246f217210fe9cc0c6",
+            "SandboxKey": "/var/run/docker/netns/f1d60e989dd3",
+            "Ports": {
+                "80/tcp": null
+            },
+            "Networks": {
+                "DB.net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "web01",
+                        "web"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "1e741b36c2d9c77f088d2cce3d89bb1b7725eac886c61e839ad692c21b914160",
+                    "EndpointID": "75dd8737a04f4130d85159309858cd68c6199e54dffa597c6baf396938696524",
+                    "Gateway": "172.23.0.1",
+                    "IPAddress": "172.23.0.5",
+                    "MacAddress": "fa:39:6a:5d:6f:fd",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "web01",
+                        "web",
+                        "4f1fc98eb624"
+                    ]
+                },
+                "DNS.net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "web01",
+                        "web"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "b9d82b405acd13c4cdd338df3b975a2e44aea2c3d395b0148603388460aa3acd",
+                    "EndpointID": "e44b9bd6e4021489dd1ffe869ee6657cfa1c76e79ce234df6a903e4f22db2f23",
+                    "Gateway": "172.21.0.1",
+                    "IPAddress": "172.21.0.5",
+                    "MacAddress": "b2:4d:ff:b2:bd:3a",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "web01",
+                        "web",
+                        "4f1fc98eb624"
+                    ]
+                },
+                "Web.net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "web01",
+                        "web"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "d75e2c341162b255a3e3bf5ce4db183bf5bb2764aec334aefe06f363221e2298",
+                    "EndpointID": "f11b4d2b6932aa87dbfec9ed1c1f39a8e2ee44010ea01dbaae7434645493712e",
+                    "Gateway": "172.20.0.1",
+                    "IPAddress": "172.20.0.4",
+                    "MacAddress": "fe:25:fb:89:93:d6",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "web01",
+                        "web",
+                        "4f1fc98eb624"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:345a474ce00ed25f3e5ef8a527483509b3642c4a102580b8795b1a3492ffce0e",
+            "size": 3514,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "fcca0d5a6c151f2a7e1e6ff93a911a4d341fdd26a01c6af265f263846b07726c",
+        "Created": "2026-06-10T08:10:26.797176221Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 160649,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-06-11T06:20:45.930221933Z",
+            "FinishedAt": "2026-06-11T06:20:45.448595493Z"
+        },
+        "Image": "sha256:45d541e9688f2c9010d22a78200117b66ed2df31b78f3464876f7e6e15cfaf77",
+        "ResolvConfPath": "/var/lib/docker/containers/fcca0d5a6c151f2a7e1e6ff93a911a4d341fdd26a01c6af265f263846b07726c/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/fcca0d5a6c151f2a7e1e6ff93a911a4d341fdd26a01c6af265f263846b07726c/hostname",
+        "HostsPath": "/var/lib/docker/containers/fcca0d5a6c151f2a7e1e6ff93a911a4d341fdd26a01c6af265f263846b07726c/hosts",
+        "LogPath": "/var/lib/docker/containers/fcca0d5a6c151f2a7e1e6ff93a911a4d341fdd26a01c6af265f263846b07726c/fcca0d5a6c151f2a7e1e6ff93a911a4d341fdd26a01c6af265f263846b07726c-json.log",
+        "Name": "/dns01",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "Admin.net",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [
+                "wazuh-manager01:172.21.0.6"
+            ],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "volume",
+                    "Source": "8b19635c3ce20fb1d0c7f616ff675ecd01d167fa0ba5444f8759e9325d3a7012",
+                    "Target": "/var/cache/bind"
+                },
+                {
+                    "Type": "volume",
+                    "Source": "a5188707e8bacbc025c68c5e744f58186bb3702d90f0fe1b0b65e67233c170d2",
+                    "Target": "/var/lib/bind"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "8b19635c3ce20fb1d0c7f616ff675ecd01d167fa0ba5444f8759e9325d3a7012",
+                "Source": "/var/lib/docker/volumes/8b19635c3ce20fb1d0c7f616ff675ecd01d167fa0ba5444f8759e9325d3a7012/_data",
+                "Destination": "/var/cache/bind",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "a5188707e8bacbc025c68c5e744f58186bb3702d90f0fe1b0b65e67233c170d2",
+                "Source": "/var/lib/docker/volumes/a5188707e8bacbc025c68c5e744f58186bb3702d90f0fe1b0b65e67233c170d2/_data",
+                "Destination": "/var/lib/bind",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "dns01",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "53/tcp": {},
+                "53/udp": {},
+                "953/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TZ=UTC"
+            ],
+            "Cmd": null,
+            "Image": "ubuntu/bind9:latest",
+            "Volumes": {
+                "/var/cache/bind": {},
+                "/var/lib/bind": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "12b53a0ed64a1142bee788cc5beadd6a1d01ff83421deecbc7d0b194ecd7a89d",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:45d541e9688f2c9010d22a78200117b66ed2df31b78f3464876f7e6e15cfaf77",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "onprem-docker",
+                "com.docker.compose.project.config_files": "/mnt/c/Users/paty1/onprem-docker/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/mnt/c/Users/paty1/onprem-docker",
+                "com.docker.compose.replace": "dns01",
+                "com.docker.compose.service": "dns",
+                "com.docker.compose.version": "5.1.4",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "25.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "0d044aebdd0614c9abf8f90cdff75fefb039f92c0e4b5c327942199a345a1ac8",
+            "SandboxKey": "/var/run/docker/netns/0d044aebdd06",
+            "Ports": {
+                "53/tcp": null,
+                "53/udp": null,
+                "953/tcp": null
+            },
+            "Networks": {
+                "Admin.net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "dns01",
+                        "dns"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "9124f3266dd0e900a4b1d421a4e505926c63799eafa8a498b95b746c827404e1",
+                    "EndpointID": "a181edefed9835c959e778b362b4db0f71d93038ba73d18d427f1b911016e31b",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.3",
+                    "MacAddress": "aa:db:82:59:a1:15",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "dns01",
+                        "dns",
+                        "fcca0d5a6c15"
+                    ]
+                },
+                "DNS.net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "dns01",
+                        "dns"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "b9d82b405acd13c4cdd338df3b975a2e44aea2c3d395b0148603388460aa3acd",
+                    "EndpointID": "b087110b69e87fd2b5d250390665845fc8d7ce13c97d396e0c5fa3c5a5b867b3",
+                    "Gateway": "172.21.0.1",
+                    "IPAddress": "172.21.0.3",
+                    "MacAddress": "b6:64:32:35:c6:c5",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "dns01",
+                        "dns",
+                        "fcca0d5a6c15"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:ce316a8d24c1579c8b07391e8fe9107225b10169e272ed5d5968f7e33723ca2e",
+            "size": 782,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "16722e034ee533e53b1e030342941e78b495a6f4ecb73bf1b947404b541ee568",
+        "Created": "2026-06-09T00:04:05.628350783Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mariadbd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 6672,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-06-10T23:17:58.570740624Z",
+            "FinishedAt": "2026-06-10T18:29:32.505680841Z"
+        },
+        "Image": "sha256:be1ef4fe5f14589325c08a41c76334097ce66c86264b75e1d28342c742782a61",
+        "ResolvConfPath": "/var/lib/docker/containers/16722e034ee533e53b1e030342941e78b495a6f4ecb73bf1b947404b541ee568/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/16722e034ee533e53b1e030342941e78b495a6f4ecb73bf1b947404b541ee568/hostname",
+        "HostsPath": "/var/lib/docker/containers/16722e034ee533e53b1e030342941e78b495a6f4ecb73bf1b947404b541ee568/hosts",
+        "LogPath": "/var/lib/docker/containers/16722e034ee533e53b1e030342941e78b495a6f4ecb73bf1b947404b541ee568/16722e034ee533e53b1e030342941e78b495a6f4ecb73bf1b947404b541ee568-json.log",
+        "Name": "/db01",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "220371d58aa22b8dba742b63b237135c4de7348dadc91964f4ce1e50cadb372d"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "onprem-docker_db_data:/var/lib/mysql:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "DB.net",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "onprem-docker_db_data",
+                "Source": "/var/lib/docker/volumes/onprem-docker_db_data/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "db01",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3306/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_PASSWORD=webpass",
+                "MYSQL_ROOT_PASSWORD=rootpass",
+                "MYSQL_DATABASE=appdb",
+                "MYSQL_USER=webuser",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "LANG=C.UTF-8",
+                "MARIADB_VERSION=1:11.8.8+maria~ubu2404"
+            ],
+            "Cmd": [
+                "mariadbd"
+            ],
+            "Image": "mariadb:11",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "4df77dd17a0e988ce51e7f8db7945f58dd43bcb385f6ac2b0e15360902bbf8d0",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:be1ef4fe5f14589325c08a41c76334097ce66c86264b75e1d28342c742782a61",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "onprem-docker",
+                "com.docker.compose.project.config_files": "/mnt/c/Users/paty1/onprem-docker/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/mnt/c/Users/paty1/onprem-docker",
+                "com.docker.compose.service": "db",
+                "com.docker.compose.version": "5.1.4",
+                "org.opencontainers.image.authors": "MariaDB Community",
+                "org.opencontainers.image.base.name": "docker.io/library/ubuntu:noble",
+                "org.opencontainers.image.description": "MariaDB Database for relational SQL",
+                "org.opencontainers.image.documentation": "https://hub.docker.com/_/mariadb/",
+                "org.opencontainers.image.licenses": "GPL-2.0",
+                "org.opencontainers.image.source": "https://github.com/MariaDB/mariadb-docker",
+                "org.opencontainers.image.title": "MariaDB Database",
+                "org.opencontainers.image.url": "https://github.com/MariaDB/mariadb-docker",
+                "org.opencontainers.image.vendor": "MariaDB Community",
+                "org.opencontainers.image.version": "11.8.8"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "f6b9d3b079c0d0d8dc7ba71fc8ba6d0bf645a0c9bc19f53239e23d1db25b0c37",
+            "SandboxKey": "/var/run/docker/netns/f6b9d3b079c0",
+            "Ports": {
+                "3306/tcp": null
+            },
+            "Networks": {
+                "DB.net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "db01",
+                        "db"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "1e741b36c2d9c77f088d2cce3d89bb1b7725eac886c61e839ad692c21b914160",
+                    "EndpointID": "1b372ee09e64db6937d3ea40ac35056014b0844bc4288398efe74084dc3f03aa",
+                    "Gateway": "172.23.0.1",
+                    "IPAddress": "172.23.0.3",
+                    "MacAddress": "36:68:2f:fa:97:6f",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "db01",
+                        "db",
+                        "16722e034ee5"
+                    ]
+                },
+                "Wazuh.net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [],
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "f38648d0f8b2826ae00fc00c75aae99e73c45e5f8d397704b409fcceafb926ae",
+                    "EndpointID": "4c7a01907825d57459b72d3dd052efe8226dd18c78cdca1c140d666c28165ddf",
+                    "Gateway": "172.22.0.1",
+                    "IPAddress": "172.22.0.2",
+                    "MacAddress": "92:c9:5f:00:63:b1",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "db01",
+                        "16722e034ee5"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:d1f0379f1ef03c24aa465744e3fc3482deded8faca5d5178a458a75a18b2b5db",
+            "size": 2478,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:023f8a753c22258c9fe2d0005a7d28258038da7d620e9f93e9ad78aa266f9f11",
+                "org.opencontainers.image.base.name": "ubuntu:noble",
+                "org.opencontainers.image.created": "2026-06-02T08:19:00Z",
+                "org.opencontainers.image.revision": "53935c78b82bff912b361357d59db11d7246ea96",
+                "org.opencontainers.image.source": "https://github.com/MariaDB/mariadb-docker.git#53935c78b82bff912b361357d59db11d7246ea96:11.8",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mariadb",
+                "org.opencontainers.image.version": "11.8.8-noble"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "f3da569dcacbbcfea091bbfdac8227ea55723070ec2ed8b6ea2c7c835b77ff3e",
+        "Created": "2026-06-10T04:19:51.946492887Z",
+        "Path": "/init",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1025,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-06-10T23:14:21.053141844Z",
+            "FinishedAt": "2026-06-10T18:29:35.547943841Z"
+        },
+        "Image": "sha256:d2387a8304391600154c7b8604b390c8b798ec1403b5f1f707703bafdb230f84",
+        "ResolvConfPath": "/var/lib/docker/containers/f3da569dcacbbcfea091bbfdac8227ea55723070ec2ed8b6ea2c7c835b77ff3e/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f3da569dcacbbcfea091bbfdac8227ea55723070ec2ed8b6ea2c7c835b77ff3e/hostname",
+        "HostsPath": "/var/lib/docker/containers/f3da569dcacbbcfea091bbfdac8227ea55723070ec2ed8b6ea2c7c835b77ff3e/hosts",
+        "LogPath": "/var/lib/docker/containers/f3da569dcacbbcfea091bbfdac8227ea55723070ec2ed8b6ea2c7c835b77ff3e/f3da569dcacbbcfea091bbfdac8227ea55723070ec2ed8b6ea2c7c835b77ff3e-json.log",
+        "Name": "/single-node-wazuh.manager-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "c5d2c4ae22400f8b0f06b54edac4de037fa6c4ad605af3ef3c7888bb0e359401",
+            "e3fbeb675be49d3816fa11d0c339febb2c0832a888bc13b7d49881300f838fee",
+            "c4ba4fe98d32f9d6f46f8b8bb4072f51f82ab9049c02b2c4acf114fe7db00b9c",
+            "adb64ab8d8ca37abbbb4433ecc07afa2b51ddbeda6073ebc70029c5dc0888ee2",
+            "9ed71c38e5ab8c7fdb3364982a9ad675f007c15c717b5eaf7ea2f73c09916d53"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "/home/ks/wazuh-docker/single-node/config/wazuh_indexer_ssl_certs/wazuh.manager.pem:/etc/ssl/filebeat.pem:rw",
+                "single-node_wazuh_api_configuration:/var/ossec/api/configuration:rw",
+                "single-node_wazuh_agentless:/var/ossec/agentless:rw",
+                "single-node_filebeat_var:/var/lib/filebeat:rw",
+                "/home/ks/wazuh-docker/single-node/config/wazuh_indexer_ssl_certs/root-ca-manager.pem:/etc/ssl/root-ca.pem:rw",
+                "/home/ks/wazuh-docker/single-node/config/wazuh_indexer_ssl_certs/wazuh.manager-key.pem:/etc/ssl/filebeat.key:rw",
+                "/home/ks/wazuh-docker/single-node/config/wazuh_cluster/wazuh_manager.conf:/wazuh-config-mount/etc/ossec.conf:rw",
+                "single-node_wazuh_etc:/var/ossec/etc:rw",
+                "single-node_wazuh_logs:/var/ossec/logs:rw",
+                "single-node_wazuh_var_multigroups:/var/ossec/var/multigroups:rw",
+                "single-node_wazuh_integrations:/var/ossec/integrations:rw",
+                "single-node_filebeat_etc:/etc/filebeat:rw",
+                "single-node_wazuh_queue:/var/ossec/queue:rw",
+                "single-node_wazuh_wodles:/var/ossec/wodles:rw",
+                "/var/lib/docker/containers:/var/lib/docker/containers:ro",
+                "single-node_wazuh_active_response:/var/ossec/active-response/bin:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "single-node_default",
+            "PortBindings": {
+                "1514/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "1514"
+                    }
+                ],
+                "1515/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "1515"
+                    }
+                ],
+                "514/udp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "514"
+                    }
+                ],
+                "55000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "55000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [
+                {
+                    "Name": "nofile",
+                    "Hard": 655360,
+                    "Soft": 655360
+                },
+                {
+                    "Name": "memlock",
+                    "Hard": -1,
+                    "Soft": -1
+                }
+            ],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ks/wazuh-docker/single-node/config/wazuh_cluster/wazuh_manager.conf",
+                "Destination": "/wazuh-config-mount/etc/ossec.conf",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_etc",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_etc/_data",
+                "Destination": "/var/ossec/etc",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_integrations",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_integrations/_data",
+                "Destination": "/var/ossec/integrations",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_queue",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_queue/_data",
+                "Destination": "/var/ossec/queue",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_filebeat_etc",
+                "Source": "/var/lib/docker/volumes/single-node_filebeat_etc/_data",
+                "Destination": "/etc/filebeat",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_api_configuration",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_api_configuration/_data",
+                "Destination": "/var/ossec/api/configuration",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_wodles",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_wodles/_data",
+                "Destination": "/var/ossec/wodles",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_var_multigroups",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_var_multigroups/_data",
+                "Destination": "/var/ossec/var/multigroups",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ks/wazuh-docker/single-node/config/wazuh_indexer_ssl_certs/wazuh.manager-key.pem",
+                "Destination": "/etc/ssl/filebeat.key",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ks/wazuh-docker/single-node/config/wazuh_indexer_ssl_certs/wazuh.manager.pem",
+                "Destination": "/etc/ssl/filebeat.pem",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/lib/docker/containers",
+                "Destination": "/var/lib/docker/containers",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rslave"
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_filebeat_var",
+                "Source": "/var/lib/docker/volumes/single-node_filebeat_var/_data",
+                "Destination": "/var/lib/filebeat",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_agentless",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_agentless/_data",
+                "Destination": "/var/ossec/agentless",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ks/wazuh-docker/single-node/config/wazuh_indexer_ssl_certs/root-ca-manager.pem",
+                "Destination": "/etc/ssl/root-ca.pem",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_active_response",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_active_response/_data",
+                "Destination": "/var/ossec/active-response/bin",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "single-node_wazuh_logs",
+                "Source": "/var/lib/docker/volumes/single-node_wazuh_logs/_data",
+                "Destination": "/var/ossec/logs",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "wazuh.manager",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "1514/tcp": {},
+                "1515/tcp": {},
+                "1516/tcp": {},
+                "514/udp": {},
+                "55000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "API_USERNAME=wazuh-wui",
+                "SSL_CERTIFICATE=/etc/ssl/filebeat.pem",
+                "INDEXER_URL=https://wazuh.indexer:9200",
+                "FILEBEAT_SSL_VERIFICATION_MODE=full",
+                "INDEXER_PASSWORD=SecretPassword",
+                "INDEXER_USERNAME=admin",
+                "SSL_KEY=/etc/ssl/filebeat.key",
+                "API_PASSWORD=MyS3cr37P450r.*-",
+                "SSL_CERTIFICATE_AUTHORITIES=/etc/ssl/root-ca.pem",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": null,
+            "Image": "wazuh/wazuh-manager:4.14.0",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/init"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "7b6aea53931c8902856fd7c2ccf021bdb56e1a56baa3a137a6aa43d5b2d0e9df",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:d2387a8304391600154c7b8604b390c8b798ec1403b5f1f707703bafdb230f84",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "single-node",
+                "com.docker.compose.project.config_files": "/home/ks/wazuh-docker/single-node/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ks/wazuh-docker/single-node",
+                "com.docker.compose.service": "wazuh.manager",
+                "com.docker.compose.version": "5.1.4"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "df771905b715d04e6dd9595dc6bafc710fcbcd5fa0737074ad0aa44ed6d18d55",
+            "SandboxKey": "/var/run/docker/netns/df771905b715",
+            "Ports": {
+                "1514/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "1514"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "1514"
+                    }
+                ],
+                "1515/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "1515"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "1515"
+                    }
+                ],
+                "1516/tcp": null,
+                "514/udp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "514"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "514"
+                    }
+                ],
+                "55000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "55000"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "55000"
+                    }
+                ]
+            },
+            "Networks": {
+                "Admin.net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "wazuh-manager01"
+                    ],
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "9124f3266dd0e900a4b1d421a4e505926c63799eafa8a498b95b746c827404e1",
+                    "EndpointID": "9ff36961f831c3b4d136da13c3c3395b68e80f20ec437bd02fc90c852f6b13f1",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.2",
+                    "MacAddress": "92:d1:5d:fb:db:cc",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "single-node-wazuh.manager-1",
+                        "wazuh-manager01",
+                        "f3da569dcacb",
+                        "wazuh.manager"
+                    ]
+                },
+                "DB.net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "wazuh-manager01"
+                    ],
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "1e741b36c2d9c77f088d2cce3d89bb1b7725eac886c61e839ad692c21b914160",
+                    "EndpointID": "aec42ba6ec761ce3d0736ca01c76e424fd76972f7a4d649d7c597d2fdf4e9509",
+                    "Gateway": "172.23.0.1",
+                    "IPAddress": "172.23.0.2",
+                    "MacAddress": "86:a2:13:11:45:29",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "single-node-wazuh.manager-1",
+                        "wazuh-manager01",
+                        "f3da569dcacb",
+                        "wazuh.manager"
+                    ]
+                },
+                "DNS.net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "wazuh-manager01"
+                    ],
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "b9d82b405acd13c4cdd338df3b975a2e44aea2c3d395b0148603388460aa3acd",
+                    "EndpointID": "0f07aaac0dd1cc4209b508407dcaf785aa2094fe31e745e2614b8df4f19c3ada",
+                    "Gateway": "172.21.0.1",
+                    "IPAddress": "172.21.0.2",
+                    "MacAddress": "86:b2:bf:87:38:df",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "single-node-wazuh.manager-1",
+                        "wazuh-manager01",
+                        "f3da569dcacb",
+                        "wazuh.manager"
+                    ]
+                },
+                "Web.net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "wazuh-manager01"
+                    ],
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "d75e2c341162b255a3e3bf5ce4db183bf5bb2764aec334aefe06f363221e2298",
+                    "EndpointID": "de617950daa2d2f0b95ec1236c4a778846182a0cd42f868fce48bbb1ce0fa2e0",
+                    "Gateway": "172.20.0.1",
+                    "IPAddress": "172.20.0.2",
+                    "MacAddress": "42:8f:c8:e5:31:14",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "single-node-wazuh.manager-1",
+                        "wazuh-manager01",
+                        "f3da569dcacb",
+                        "wazuh.manager"
+                    ]
+                },
+                "single-node_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "single-node-wazuh.manager-1",
+                        "wazuh.manager"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "bd13a5fae80d4a1f2894670e54d9a9b73960895e8309b689625ce4252952ab61",
+                    "EndpointID": "5ec84da11516fc5e26d96ec10ec7d9a83b09a2ce6743d744ab114706e9eaa676",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.4",
+                    "MacAddress": "22:4c:e9:97:8c:cf",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "single-node-wazuh.manager-1",
+                        "wazuh.manager",
+                        "f3da569dcacb"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:d2387a8304391600154c7b8604b390c8b798ec1403b5f1f707703bafdb230f84",
+            "size": 3860,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
