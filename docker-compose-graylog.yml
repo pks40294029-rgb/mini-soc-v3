@@ -33,7 +33,7 @@ services:
       - opensearch
     ports:
       - "9000:9000"
-      - "1514:1514/udp"
+      - "1516:1514/udp"
       - "12201:12201/udp"
     networks: [graynet]
 networks:
