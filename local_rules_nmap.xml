@@ -1,0 +1,7 @@
+<group name="suricata,">
+  <rule id="100301" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="alert.signature_id">1000003</field>
+    <description>Suricata NMAP SCAN DETECTED</description>
+  </rule>
+</group>

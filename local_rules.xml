@@ -1,0 +1,6 @@
+<group name="suricata,">
+  <rule id="100301" level="8">
+    <match>NMAP SCAN DETECTED</match>
+    <description>Suricata Alert - NMAP SCAN DETECTED</description>
+  </rule>
+</group>
